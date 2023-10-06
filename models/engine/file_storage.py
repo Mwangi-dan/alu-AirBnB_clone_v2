@@ -13,7 +13,7 @@ class FileStorage:
         filter_by_class = {}
         if cls:
             for key, value in FileStorage.__objects.items():
-                if valuew.__class__ == cls:
+                if value.__class__ == cls:
                     filter_by_class[key] = value
             return filter_by_class
         return FileStorage.__objects
