@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 """
-script that geerates a tgz arcjive from the contents of the web_static
+script that geerates a tgz arcjive from the
+contents of the web_static
 folder of Airbnb Clone repo
 """
 
 
 from datetime import datetime
-from fabric.api import local
+from fabric import local
 from os.path import isdir
 
 
@@ -20,4 +21,4 @@ def do_pack():
         local("tar -cvzf {} web_static".format(file_name))
         return file_name
     except:
-	return None
+	    return None
