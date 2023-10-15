@@ -5,7 +5,6 @@ contents of the web_static
 folder of Airbnb Clone repo
 """
 
-
 from datetime import datetime
 from fabric import local
 from os.path import isdir
