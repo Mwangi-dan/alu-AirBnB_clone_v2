@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-""" Compressing before sending"""
+"""
+script that geerates a tgz arcjive from the contents of the web_static
+folder of Airbnb Clone repo
+"""
 
 
 from datetime import datetime
