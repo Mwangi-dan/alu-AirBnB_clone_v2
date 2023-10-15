@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 # Script sets up my web servers for the deployment of web static
 sudo apt-get -y  install nginx
 sudo mkdir -p /data/web_static/releases/ /data/web_static/shared/
