@@ -2,7 +2,7 @@
 """ Script that starts a Flaks web application """
 
 
-from flask import flask
+from flask import Flask
 
 
 app = Flask(__name__)
@@ -10,8 +10,8 @@ app = Flask(__name__)
 
 @app.route('/', strict_slashes=False)
 def hello_world():
-    """ Returns Hello world text """
-    return 'Hello HBNB!'
+	""" Returns Hello world text """
+	return 'Hello HBNB!'
 
 
 if __name__ == "__main__":
