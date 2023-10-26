@@ -2,7 +2,7 @@
 """ Start Flask application and display HBNB """
 
 
-from flask import flask
+from flask import Flask
 
 
 app = Flask(__name__)
@@ -11,7 +11,7 @@ app = Flask(__name__)
 @app.route('/', strict_slashes=False)
 def hello_world():
 	"""
-	 Returns `HBNB`
+	Returns `HBNB`
 	"""
 	return 'Hello HBNB!'
 
