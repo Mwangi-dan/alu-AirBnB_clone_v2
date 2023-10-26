@@ -27,7 +27,7 @@ def c_is_fun(text):
 	"""
 	returns text with text witten after c
 	"""
-	text.replace('_', ' ')	
+	text = text.replace('_', ' ')	
 	return "C {}".format(text)
 
 if __name__ == '__main__':
