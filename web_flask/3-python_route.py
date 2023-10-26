@@ -33,16 +33,14 @@ def c_is_fun(text):
     return "C {}".format(text)
 
 
+@app.route('/python/', strict_slashes=False)
 @app.route('/python/(<text>)', strict_slashes=False)
-def python_text(text):
+def python_text(text="is cool"):
     """
     python text
     """
-    if text is None:
-        return "Python is cool"
-    else:
-        text = text.replace('_', ' ')
-        return "Python {}".format(text)
+    text = text.replace('_', ' ')
+    return "Python {}".format(text)
 
 
 if __name__ == '__main__':
