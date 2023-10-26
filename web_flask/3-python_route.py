@@ -34,11 +34,11 @@ def c_is_fun(text):
 
 
 @app.route('/python/(<text>)', strict_slashes=False)
-def python_text():
+def python_text(text):
     """
     python text
     """
-    if text == None:
+    if text is None:
         return "Python is cool"
     else:
         text = text.replace('_', ' ')
