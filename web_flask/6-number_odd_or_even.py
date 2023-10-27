@@ -69,7 +69,7 @@ def number_even_odd(n):
         state = "even"
     else:
         state = "odd"
-    return render_tempate('6-number_odd_or_even.html', n=n, state=state)
+    return render_template('6-number_odd_or_even.html', n=n, state=state)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
